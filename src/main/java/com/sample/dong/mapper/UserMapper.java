@@ -14,6 +14,6 @@ public interface UserMapper {
     List<UserDTO> toDTOList(List<User> users);
 
     @Mapping(target = "lastModifiedDate", ignore = true)
-    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "id1", ignore = true)
     User toEntity(UserDTO userDto);
 }
